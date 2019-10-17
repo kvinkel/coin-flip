@@ -15,11 +15,9 @@ public class Coin {
 
     public void airTime() {
         char[] coinArr = {'-', '\\', '|', '/'};
-        int charIndex = 0;
         try {
             for (int i = 0; i < 16; i++) {
-                System.out.print("\r" + coinArr[charIndex]);
-                charIndex = (charIndex + 1) % coinArr.length;
+                System.out.print("\r" + coinArr[i % coinArr.length]);
                 TimeUnit.MILLISECONDS.sleep(flipSpeed);
             }
         } catch (InterruptedException e) {
