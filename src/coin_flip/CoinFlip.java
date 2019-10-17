@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CoinFlip {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Coin coin = new Coin(250);
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Coin Flip!\nType heads or tails!\nType q to quit.");
