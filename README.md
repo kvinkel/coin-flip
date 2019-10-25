@@ -7,3 +7,10 @@ Compile from the src folder with: <br>
 
 Run: <br>
 ~/src$ java coin_flip.CoinFlip
+
+# Docker
+### Pull from Docker Hub:
+docker pull kvinkel/coin-flip
+### Build and run:
+docker build -t coin-flip . <br>
+docker run -it coin-flip
